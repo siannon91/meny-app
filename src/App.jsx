@@ -1,15 +1,11 @@
-import Dish from './components/Dish'
+import { meny } from './data/meny'
+import Menu from './components/Menu'
 
 function App() {
   return (
   <div>
     <h1>RestaurantMeny</h1>
-    <Dish
-      tittel="Spaghetti Bolognese"
-      pris="159 kr"
-      ingredienser="Spaghetti, kjøttsaus, parmesan"
-      kategori="Hovedrett"
-    />
+    <Menu meny={meny} />
   </div>
   )
 }
