@@ -6,8 +6,8 @@ function Dish(props) {
         <div className={styles.card}>
             <div className={styles.bilderamme}>
                 <img className={styles.bilde} src={bildeSti} alt={props.tittel} />
+                <h2 className={styles.tittel}>{props.tittel}</h2>
             </div>
-            <h2>{props.tittel}</h2>
             <p>Kategori: {props.kategori}</p>
             <p>Ingredienser: {props.ingredienser}</p>
             <p>Pris: {props.pris}</p>
