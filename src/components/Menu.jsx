@@ -7,6 +7,7 @@ function Menu(props) {
             {props.meny.map((rett) => (
                 <Dish
                     key={rett.id}
+                    id={rett.id}
                     tittel={rett.tittel}
                     pris={rett.pris}
                     ingredienser={rett.ingredienser}

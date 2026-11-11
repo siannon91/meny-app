@@ -2,7 +2,35 @@
     background-color: white;
     border: 1px solid black;
     text-align: center;
-    padding: 20px;
     border-radius: 3px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+.bilderamme {
+    width: 100%;
+    aspect-ratio: 2/1;
+    overflow: hidden;
+}
+
+.bilde {
+    display: block;
+    width: 100%;
+    margin-top: -50%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.card:hover .bilde {
+    animation: gira 50s linear infinite;
+}
+
+@keyframes gira {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card:hover {
+    transform: scale(1.2);
 }
