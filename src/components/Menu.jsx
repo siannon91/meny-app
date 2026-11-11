@@ -1,8 +1,9 @@
 import Dish from "./Dish";
+import styles from './Menu.module.css'
 
 function Menu(props) {
     return (
-        <div>
+        <div className={styles.grid}>
             {props.meny.map((rett) => (
                 <Dish
                     key={rett.id}
