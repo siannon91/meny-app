@@ -19,7 +19,6 @@ function Menu(props) {
                                     tittel={rett.tittel}
                                     pris={rett.pris}
                                     ingredienser={rett.ingredienser}
-                                    /*kategori={rett.kategori}*/
                                 />
                             ))}
                     </div>

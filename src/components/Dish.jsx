@@ -8,9 +8,8 @@ function Dish(props) {
                 <img className={styles.bilde} src={bildeSti} alt={props.tittel} />
                 <h2 className={styles.tittel}>{props.tittel}</h2>
             </div>
-            <p>Kategori: {props.kategori}</p>
-            <p>Ingredienser: {props.ingredienser}</p>
-            <p>Pris: {props.pris}</p>
+            <p className={styles.ingredienser}>Ingredienser: {props.ingredienser}</p>
+            <p className={styles.pris}>Pris: {props.pris}</p>
         </div>
     )
 }
