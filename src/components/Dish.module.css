@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    transition: all 0.2s ease;
 }
 
 .bilderamme {
@@ -28,7 +29,7 @@
     margin-top: -50%;
     aspect-ratio: 1/1;
     object-fit: contain;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 .card:hover .bilde {
@@ -62,21 +63,26 @@
         0 0 12px rgba(0, 0, 0, 0.9),
         0 0 24px rgba(0, 0, 0, 0.7);
     pointer-events: none;
-    padding: 10px 60px 80px 60px;
+    padding: 17px 20px 80px 20px;
     line-height: 1;
     font-weight: bold;
 }
 
 .ingredienser{
-    padding: 10px 30px 40px 30px;
-    color: rgb(78, 73, 73);
+    padding: 0 30px 10px 30px;
+    color: #4a3a2a;
     font-weight: 500;
     flex-grow: 1;
+    font-size: 1.1rem;
 }
 
 .pris {
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     font-weight: bold;
     color: rgb(52, 24, 0);
+    background-color: #9a663141;
     font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
